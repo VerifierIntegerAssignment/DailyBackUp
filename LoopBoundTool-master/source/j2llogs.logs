@@ -1,0 +1,314 @@
+
+***********************
+2020-07-28 18:56:52
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+
+Equation Pass to sympy
+T(n+1)-(T(n) + 1)=0------Base Case--T(0)=b
+
+Closed form solution return by sympy 
+b + n
+
+Original Axoims 
+b1(_n1 + 1)=b1(_n1) + 1,b1(0)=b
+ Closed Form Solution
+_n1 + b
+
+***********************
+2020-08-01 00:04:52
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+name 'temp_update_statements' is not defined
+***********************
+2020-08-01 00:09:13
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+name 'temp_update_statements' is not defined
+***********************
+2020-08-01 00:09:52
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+name 'temp_update_statements' is not defined
+***********************
+2020-08-01 00:10:43
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+name 'temp_update_statements' is not defined
+***********************
+2020-08-01 00:11:14
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+name 'temp_update_statements' is not defined
+***********************
+2020-08-01 00:11:53
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+name 'temp_update_statements' is not defined
+***********************
+2020-08-01 00:45:58
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+name 'temp_update_statements' is not defined
+***********************
+2020-08-01 00:54:57
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+name 'temp_update_statements' is not defined
+***********************
+2020-08-01 00:58:19
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+name 'translate2IntForm' is not defined
+***********************
+2020-08-01 01:01:30
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+name 'translate2IntForm' is not defined
+***********************
+2020-08-01 01:03:00
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+name 'translate2IntForm' is not defined
+***********************
+2020-08-01 01:03:41
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+name 'translate2IntForm' is not defined
+***********************
+2020-08-01 01:13:39
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+name 'constructProgAssertAnalysis2' is not defined
+***********************
+2020-08-01 01:16:43
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+name 'constructProgAssertAnalysis' is not defined
+***********************
+2020-08-01 01:18:10
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+
+***********************
+2020-08-01 01:21:26
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+
+***********************
+2020-08-01 01:23:16
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+
+Equation Pass to sympy
+T(n+1)-(T(n) + 1)=0------Base Case--T(0)=b
+
+Closed form solution return by sympy 
+b + n
+dictionary changed size during iteration
+***********************
+2020-08-01 01:25:13
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+
+Equation Pass to sympy
+T(n+1)-(T(n) + 1)=0------Base Case--T(0)=b
+
+Closed form solution return by sympy 
+b + n
+dictionary changed size during iteration
+***********************
+2020-08-01 01:36:12
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+
+Equation Pass to sympy
+T(n+1)-(T(n) + 1)=0------Base Case--T(0)=b
+
+Closed form solution return by sympy 
+b + n
+
+***********************
+2020-08-01 01:41:23
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+
+Equation Pass to sympy
+T(n+1)-(T(n) + 1)=0------Base Case--T(0)=b
+
+Closed form solution return by sympy 
+b + n
+
+***********************
+2020-08-01 02:06:09
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+
+Equation Pass to sympy
+T(n+1)-(T(n) + 1)=0------Base Case--T(0)=b
+
+Closed form solution return by sympy 
+b + n
+
+***********************
+2020-08-01 02:08:44
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+
+Equation Pass to sympy
+T(n+1)-(T(n) + 1)=0------Base Case--T(0)=b
+
+Closed form solution return by sympy 
+b + n
+
+***********************
+2020-08-01 02:09:49
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+
+Equation Pass to sympy
+T(n+1)-(T(n) + 1)=0------Base Case--T(0)=b
+
+Closed form solution return by sympy 
+b + n
+
+***********************
+2020-08-01 02:14:07
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+
+Equation Pass to sympy
+T(n+1)-(T(n) + 1)=0------Base Case--T(0)=b
+
+Closed form solution return by sympy 
+b + n
+
+***********************
+2020-08-01 02:40:44
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+
+Equation Pass to sympy
+T(n+1)-(T(n) + 1)=0------Base Case--T(0)=b
+
+Closed form solution return by sympy 
+b + n
+
+***********************
+2020-08-01 02:50:02
+***********************
+
+Command--Translate 
+
+Parameters--
+ File Name--benchmark/ABC_ex01.c
+
+Equation Pass to sympy
+T(n+1)-(T(n) + 1)=0------Base Case--T(0)=b
+
+Closed form solution return by sympy 
+b + n
