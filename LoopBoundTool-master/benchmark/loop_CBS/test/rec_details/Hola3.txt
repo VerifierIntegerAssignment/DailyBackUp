@@ -1,0 +1,44 @@
+pritom@pritom-VirtualBox:~/mainDev/viap_new$ ./viap_tool.py --spec=ReachSafety.prp Hola/3.c
+Program Body
+{
+  int _1_PROVE = 0;
+  int x;
+  int y;
+  x = -50;
+  while (x < 0)
+  {
+    x = x + y;
+    y = y + 1;
+  }
+
+  _1_PROVE = y > 0;
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ y:int x:int _1_PROVE:int}
+
+Output in normal notation:
+1. Frame axioms:
+
+2. Output equations:
+y1 = y2(_N1)
+x1 = x2(_N1)
+
+3. Other axioms:
+y2((_n1+1)) = (y2(_n1)+1)
+x2((_n1+1)) = (x2(_n1)+y2(_n1))
+y2(0) = y
+x2(0) = -(50)
+(0>=-(x2(_N1)))
+(_n1<_N1) -> (x2(_n1)<0)
+
+4. Assumption :
+
+5. Assertion :
+(y2(_N1)>0)

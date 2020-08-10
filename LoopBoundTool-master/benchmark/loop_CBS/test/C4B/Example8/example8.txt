@@ -1,0 +1,43 @@
+pritom@pritom-VirtualBox:~/mainDev/viap_new$ ./viap_tool.py --spec=ReachSafety.prp test/C4B/test1.i
+Program Body
+{
+  int y;
+  int z;
+  while (z > y)
+  {
+    y = y + 1;
+  }
+
+  while (y > 2)
+  {
+    y = y - 3;
+  }
+
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ y:int z:int}
+
+Output in normal notation:
+1. Frame axioms:
+z1 = z
+
+2. Output equations:
+y1 = ((-(3)*_N2)+(_N1+y))
+
+3. Other axioms:
+(_N1>=(-(y)+z))
+(_n1<_N1) -> (z>(_n1+y))
+(_N2>=(((_N1+y)/3)-(2/3)))
+(_n2<_N2) -> (((-(3)*_n2)+(_N1+y))>2)
+
+4. Assumption :
+
+5. Assertion :
+VIAP_STANDARD_OUTPUT_True

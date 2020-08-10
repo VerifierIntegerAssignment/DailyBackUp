@@ -1,0 +1,73 @@
+pritom@pritom-VirtualBox:~/mainDev/viap_new$ ./viap_tool.py --spec=ReachSafety.prp Hola/5.c
+Program Body
+{
+  int LARGE_INT;
+  int _1_PROVE = 0;
+  int w;
+  w = 1;
+  int z;
+  z = 0;
+  int x;
+  x = 0;
+  int y;
+  y = 0;
+  while (((z < LARGE_INT) && (w < LARGE_INT)) && (__VERIFIER_nondet_int() > 0))
+  {
+    while (((x < LARGE_INT) && (y < LARGE_INT)) && (__VERIFIER_nondet_int() > 0))
+    {
+      if ((w % 2) == 1)
+        x = x + 1;
+
+      if ((z % 2) == 0)
+        y = y + 1;
+
+    }
+
+    z = x + y;
+    w = z + 1;
+  }
+
+  _1_PROVE = x == y;
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ LARGE_INT:int _1_PROVE:int w:int y:int x:int z:int}
+
+Output in normal notation:
+1. Frame axioms:
+LARGE_INT1 = LARGE_INT
+
+2. Output equations:
+y1 = y7(_N2)
+x1 = x7(_N2)
+z1 = z7(_N2)
+w1 = w7(_N2)
+
+3. Other axioms:
+y4((_n1+1),_n2) = ite(((z7(_n2)%2)==0),(y4(_n1,_n2)+1),y4(_n1,_n2))
+x4((_n1+1),_n2) = ite(((w7(_n2)%2)==1),(x4(_n1,_n2)+1),x4(_n1,_n2))
+y4(0,_n2) = y7(_n2)
+x4(0,_n2) = x7(_n2)
+(((x4(_N1(_n2),_n2)>=LARGE_INT) or (y4(_N1(_n2),_n2)>=LARGE_INT)) or (__VERIFIER_nondet_int2(_N1(_n2),_n2)<=0))
+(_n1<_N1(_n2)) -> (((x4(_n1,_n2)<LARGE_INT) and (y4(_n1,_n2)<LARGE_INT)) and (__VERIFIER_nondet_int2(_n1,_n2)>0))
+y7((_n2+1)) = y4(_N1(_n2),_n2)
+x7((_n2+1)) = x4(_N1(_n2),_n2)
+z7((_n2+1)) = (x4(_N1(_n2),_n2)+y4(_N1(_n2),_n2))
+w7((_n2+1)) = ((x4(_N1(_n2),_n2)+y4(_N1(_n2),_n2))+1)
+y7(0) = 0
+x7(0) = 0
+z7(0) = 0
+w7(0) = 1
+(((z7(_N2)>=LARGE_INT) or (w7(_N2)>=LARGE_INT)) or (__VERIFIER_nondet_int3(_N2)<=0))
+(_n2<_N2) -> (((z7(_n2)<LARGE_INT) and (w7(_n2)<LARGE_INT)) and (__VERIFIER_nondet_int3(_n2)>0))
+
+4. Assumption :
+
+5. Assertion :
+(x7(_N2)==y7(_N2))

@@ -1,0 +1,55 @@
+Program Body
+{
+  int n;
+  int m;
+  int va;
+  va = n;
+  int vb;
+  vb = 0;
+  while (va > 0)
+  {
+    if (vb < m)
+    {
+      vb = vb + 1;
+      va = va - 1;
+    }
+    else
+    {
+      vb = vb - 1;
+      vb = 0;
+    }
+
+  }
+
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ va:int vb:int m:int n:int}
+
+Output in normal notation:
+1. Frame axioms:
+m1 = m
+n1 = n
+
+2. Output equations:
+va1 = va5(_N1)
+vb1 = vb5(_N1)
+
+3. Other axioms:
+va5((_n1+1)) = ite((vb5(_n1)<m),(va5(_n1)-1),va5(_n1))
+vb5((_n1+1)) = ite((vb5(_n1)<m),(vb5(_n1)+1),0)
+va5(0) = n
+vb5(0) = 0
+(0<=-(va5(_N1)))
+(_n1<_N1) -> (va5(_n1)>0)
+
+4. Assumption :
+
+5. Assertion :
+VIAP_STANDARD_OUTPUT_True

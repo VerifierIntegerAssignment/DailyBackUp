@@ -1,0 +1,44 @@
+Program Body
+{
+  int n;
+  int x;
+  x = 0;
+  while (x < n)
+  {
+    if (__VERIFIER_nondet_int() > 0)
+    {
+      x = x + 1;
+    }
+    else
+    {
+      x = x + 1;
+    }
+
+  }
+
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ x:int n:int}
+
+Output in normal notation:
+1. Frame axioms:
+n1 = n
+
+2. Output equations:
+x1 = (_N1+0)
+
+3. Other axioms:
+(_N1>=(n-0))
+(_n1<_N1) -> ((_n1+0)<n)
+
+4. Assumption :
+
+5. Assertion :
+VIAP_STANDARD_OUTPUT_True

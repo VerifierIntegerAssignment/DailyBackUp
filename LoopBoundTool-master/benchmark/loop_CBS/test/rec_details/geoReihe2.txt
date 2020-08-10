@@ -1,0 +1,53 @@
+pritom@pritom-VirtualBox:~/mainDev/viap_new$ ./viap_tool.py --spec=ReachSafety.prp rec_eq/geoReihe2.c
+Program Body
+{
+  int Z;
+  int K;
+  int m;
+  int l;
+  int c;
+  m = 1;
+  l = 1;
+  c = 1;
+  while (c < K)
+  {
+    c = c + 1;
+    m = (m * Z) + 1;
+    l = l * Z;
+  }
+
+  m = m * (Z - 1);
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ c:int K:int Z:int m:int l:int}
+
+Output in normal notation:
+1. Frame axioms:
+K1 = K
+Z1 = Z
+
+2. Output equations:
+c1 = c3(_N1)
+m1 = (m3(_N1)*(Z-1))
+l1 = l3(_N1)
+
+3. Other axioms:
+c3((_n1+1)) = (c3(_n1)+1)
+m3((_n1+1)) = ((m3(_n1)*Z)+1)
+l3((_n1+1)) = (l3(_n1)*Z)
+c3(0) = 1
+m3(0) = 1
+l3(0) = 1
+(0<=(-(K)+c3(_N1)))
+(_n1<_N1) -> (c3(_n1)<K)
+
+4. Assumption :
+
+5. Assertion :

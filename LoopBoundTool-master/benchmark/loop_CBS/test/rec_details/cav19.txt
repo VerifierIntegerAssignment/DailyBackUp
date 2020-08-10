@@ -1,0 +1,57 @@
+Program Body
+{
+  int x;
+  int y;
+  int K;
+  while (y != K)
+  {
+    if (x > K)
+    {
+      x = x - 1;
+    }
+    else
+    {
+      x = x + 1;
+    }
+
+    if (y > x)
+    {
+      y = y - 1;
+    }
+    else
+    {
+      y = y + 1;
+    }
+
+  }
+
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ y:int x:int K:int}
+
+Output in normal notation:
+1. Frame axioms:
+K1 = K
+
+2. Output equations:
+y1 = y6(_N1)
+x1 = x6(_N1)
+
+3. Other axioms:
+y6((_n1+1)) = ite((y6(_n1)>ite((x6(_n1)>K),(x6(_n1)-1),(x6(_n1)+1))),(y6(_n1)-1),(y6(_n1)+1))
+x6((_n1+1)) = ite((x6(_n1)>K),(x6(_n1)-1),(x6(_n1)+1))
+y6(0) = y
+x6(0) = x
+(y6(_N1)==K)
+(_n1<_N1) -> (y6(_n1)!=K)
+
+4. Assumption :
+
+5. Assertion :

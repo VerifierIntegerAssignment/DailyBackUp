@@ -1,0 +1,46 @@
+Program Body
+{
+  int x;
+  int y;
+  int t;
+  while (x > 0)
+  {
+    x = x - 1;
+    t = x;
+    x = y;
+    y = t;
+  }
+
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ y:int x:int t:int}
+
+Output in normal notation:
+1. Frame axioms:
+
+2. Output equations:
+y1 = y4(_N1)
+x1 = x4(_N1)
+t1 = t4(_N1)
+
+3. Other axioms:
+y4((_n1+1)) = (x4(_n1)-1)
+x4((_n1+1)) = y4(_n1)
+t4((_n1+1)) = (x4(_n1)-1)
+y4(0) = y
+x4(0) = x
+t4(0) = t
+(0<=-(x4(_N1)))
+(_n1<_N1) -> (x4(_n1)>0)
+
+4. Assumption :
+
+5. Assertion :
+VIAP_STANDARD_OUTPUT_True

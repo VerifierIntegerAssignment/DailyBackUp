@@ -1,0 +1,66 @@
+pritom@pritom-VirtualBox:~/mainDev/viap_new$ ./viap_tool.py --spec=ReachSafety.prp Hola/4.c
+Program Body
+{
+  int LARGE_INT;
+  int _1_PROVE = 0;
+  int x;
+  x = 0;
+  int y;
+  y = 0;
+  int j;
+  j = 0;
+  int i;
+  i = 0;
+  int flag;
+  while ((x < LARGE_INT) && (__VERIFIER_nondet_int() > 0))
+  {
+    x = x + 1;
+    y = y + 1;
+    i = i + x;
+    j = j + y;
+    if (flag > 0)
+    {
+      j = j + 1;
+    }
+
+  }
+
+  _1_PROVE = j >= i;
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ LARGE_INT:int j:int i:int _1_PROVE:int flag:int y:int x:int}
+
+Output in normal notation:
+1. Frame axioms:
+LARGE_INT1 = LARGE_INT
+flag1 = flag
+
+2. Output equations:
+i1 = i6(_N1)
+y1 = y6(_N1)
+j1 = j6(_N1)
+x1 = x6(_N1)
+
+3. Other axioms:
+i6((_n1+1)) = (i6(_n1)+(x6(_n1)+1))
+y6((_n1+1)) = (y6(_n1)+1)
+j6((_n1+1)) = ite((flag>0),((j6(_n1)+(y6(_n1)+1))+1),(j6(_n1)+(y6(_n1)+1)))
+x6((_n1+1)) = (x6(_n1)+1)
+i6(0) = 0
+y6(0) = 0
+j6(0) = 0
+x6(0) = 0
+((x6(_N1)>=LARGE_INT) or (__VERIFIER_nondet_int2(_N1)<=0))
+(_n1<_N1) -> ((x6(_n1)<LARGE_INT) and (__VERIFIER_nondet_int2(_n1)>0))
+
+4. Assumption :
+
+5. Assertion :
+(j6(_N1)>=i6(_N1))

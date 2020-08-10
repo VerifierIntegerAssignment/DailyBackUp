@@ -1,0 +1,53 @@
+Program Body
+{
+  int n;
+  int m;
+  int x;
+  x = 0;
+  int y;
+  y = 0;
+  while (x < n)
+  {
+    if (y < m)
+    {
+      y = y + 1;
+    }
+    else
+    {
+      x = x + 1;
+    }
+
+  }
+
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ y:int x:int m:int n:int}
+
+Output in normal notation:
+1. Frame axioms:
+m1 = m
+n1 = n
+
+2. Output equations:
+y1 = y3(_N1)
+x1 = x3(_N1)
+
+3. Other axioms:
+y3((_n1+1)) = ite((y3(_n1)<m),(y3(_n1)+1),y3(_n1))
+x3((_n1+1)) = ite((y3(_n1)<m),x3(_n1),(x3(_n1)+1))
+y3(0) = 0
+x3(0) = 0
+(0<=(-(n)+x3(_N1)))
+(_n1<_N1) -> (x3(_n1)<n)
+
+4. Assumption :
+
+5. Assertion :
+VIAP_STANDARD_OUTPUT_True

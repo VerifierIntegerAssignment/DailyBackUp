@@ -1,0 +1,118 @@
+Program Body
+{
+  int y;
+  int x;
+  int _1DUMMY;
+  _1DUMMY = 0;
+  int _2DUMMY;
+  _2DUMMY = 0;
+  int _3DUMMY;
+  _3DUMMY = 0;
+  _1DUMMY = consume();
+  _2DUMMY = produce();
+  _3DUMMY = consume();
+}
+
+Function Name:
+start
+Return Type:
+void
+Input Variables:
+{ y:int z:int}
+Local Variables:
+{ y:int x:int _3DUMMY:int _2DUMMY:int _1DUMMY:int}
+Program Body
+{
+  int y;
+  int x;
+  int _1DUMMY;
+  _1DUMMY = 0;
+  while (x > 0)
+  {
+    _1DUMMY = tick(-1);
+    x = x - 1;
+    y = y + 1;
+  }
+
+}
+
+Function Name:
+produce
+Return Type:
+void
+Input Variables:
+{}
+Local Variables:
+{ y:int x:int _1DUMMY:int}
+Program Body
+{
+  int y;
+  int x;
+  int _1DUMMY;
+  _1DUMMY = 0;
+  while (y > 0)
+  {
+    y = y - 1;
+    x = x + 1;
+    _1DUMMY = tick(1);
+  }
+
+}
+
+Function Name:
+consume
+Return Type:
+void
+Input Variables:
+{}
+Local Variables:
+{ y:int x:int _1DUMMY:int}
+
+Output in normal notation:
+1. Frame axioms:
+y1(y) = y
+x1 = x
+z1(z) = z
+
+2. Output equations:
+_3DUMMY1 = consume
+_2DUMMY1 = produce
+_1DUMMY1 = consume
+
+3. Other axioms:
+
+4. Assumption :
+
+5. Assertion :
+
+Output in normal notation:
+1. Frame axioms:
+
+2. Output equations:
+y1 = (_N1+y)
+x1 = (-(_N1)+x)
+_1DUMMY1 = tick(-(1))
+
+3. Other axioms:
+(_N1>=x)
+(_n1<_N1) -> ((-(_n1)+x)>0)
+
+4. Assumption :
+
+5. Assertion :
+
+Output in normal notation:
+1. Frame axioms:
+
+2. Output equations:
+y1 = (-(_N2)+y)
+x1 = (_N2+x)
+_1DUMMY1 = tick(1)
+
+3. Other axioms:
+(_N2>=y)
+(_n2<_N2) -> ((-(_n2)+y)>0)
+
+4. Assumption :
+
+5. Assertion :

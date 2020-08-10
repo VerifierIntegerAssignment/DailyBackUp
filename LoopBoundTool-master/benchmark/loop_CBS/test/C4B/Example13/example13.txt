@@ -1,0 +1,52 @@
+Program Body
+{
+  int x;
+  int y;
+  while (x > 0)
+  {
+    x = x - 1;
+    if (__VERIFIER_nondet_int() > 0)
+    {
+      y = y + 1;
+    }
+    else
+    {
+      while (y > 0)
+      {
+        y = y - 1;
+      }
+
+    }
+
+  }
+
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ y:int x:int}
+
+Output in normal notation:
+1. Frame axioms:
+
+2. Output equations:
+y1 = y6(_N2)
+x1 = (-(_N2)+x)
+
+3. Other axioms:
+(_N1(_n2)>=y6(_n2))
+(_n1<_N1(_n2)) -> ((-(_n1)+y6(_n2))>0)
+y6((_n2+1)) = ite((__VERIFIER_nondet_int2(_n2)>0),(y6(_n2)+1),(-(_N1(_n2))+y6(_n2)))
+y6(0) = y
+(_N2>=x)
+(_n2<_N2) -> ((-(_n2)+x)>0)
+
+4. Assumption :
+
+5. Assertion :
+VIAP_STANDARD_OUTPUT_True

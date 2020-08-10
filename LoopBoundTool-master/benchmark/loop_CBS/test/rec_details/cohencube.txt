@@ -1,0 +1,56 @@
+pritom@pritom-VirtualBox:~/mainDev/viap_new$ ./viap_tool.py --spec=ReachSafety.prp rec_eq/cubeCohen.c
+Program Body
+{
+  int X;
+  int i;
+  int m;
+  int y;
+  int z;
+  i = 1;
+  m = 0;
+  y = 1;
+  z = 6;
+  while (i <= X)
+  {
+    i = i + 1;
+    m = m + y;
+    y = y + z;
+    z = z + 6;
+  }
+
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ i:int X:int z:int m:int y:int}
+
+Output in normal notation:
+1. Frame axioms:
+X1 = X
+
+2. Output equations:
+i1 = i4(_N1)
+y1 = y4(_N1)
+z1 = z4(_N1)
+m1 = m4(_N1)
+
+3. Other axioms:
+i4((_n1+1)) = (i4(_n1)+1)
+y4((_n1+1)) = (y4(_n1)+z4(_n1))
+z4((_n1+1)) = (z4(_n1)+6)
+m4((_n1+1)) = (m4(_n1)+y4(_n1))
+i4(0) = 1
+y4(0) = 1
+z4(0) = 6
+m4(0) = 0
+(i4(_N1)>X)
+(_n1<_N1) -> (i4(_n1)<=X)
+
+4. Assumption :
+
+5. Assertion :

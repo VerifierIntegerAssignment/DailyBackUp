@@ -1,0 +1,67 @@
+pritom@pritom-VirtualBox:~/mainDev/viap_new$ ./viap_tool.py --spec=ReachSafety.prp Hola/7.c
+Program Body
+{
+  int LARGE_INT;
+  int _1_PROVE = 0;
+  int x;
+  x = 0;
+  int y;
+  y = 0;
+  while ((((x < LARGE_INT) && (y < LARGE_INT)) && (y > (-LARGE_INT))) && (__VERIFIER_nondet_int() > 0))
+  {
+    if (__VERIFIER_nondet_int() > 0)
+    {
+      x = x + 1;
+      y = y + 100;
+    }
+    else
+      if (__VERIFIER_nondet_int() > 0)
+    {
+      if (x >= 4)
+      {
+        x = x + 1;
+        y = y + 1;
+      }
+
+      if (x < 0)
+      {
+        y = y - 1;
+      }
+
+    }
+
+
+  }
+
+  _1_PROVE = (x < 4) || (y > 2);
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ y:int x:int LARGE_INT:int _1_PROVE:int}
+
+Output in normal notation:
+1. Frame axioms:
+LARGE_INT1 = LARGE_INT
+
+2. Output equations:
+y1 = y9(_N1)
+x1 = x9(_N1)
+
+3. Other axioms:
+y9((_n1+1)) = ite((__VERIFIER_nondet_int3(_n1)>0),(y9(_n1)+100),ite((__VERIFIER_nondet_int2(_n1)>0),ite((ite((x9(_n1)>=4),(x9(_n1)+1),x9(_n1))<0),(ite((x9(_n1)>=4),(y9(_n1)+1),y9(_n1))-1),ite((x9(_n1)>=4),(y9(_n1)+1),y9(_n1))),y9(_n1)))
+x9((_n1+1)) = ite((__VERIFIER_nondet_int3(_n1)>0),(x9(_n1)+1),ite((__VERIFIER_nondet_int2(_n1)>0),ite((x9(_n1)>=4),(x9(_n1)+1),x9(_n1)),x9(_n1)))
+y9(0) = 0
+x9(0) = 0
+((((x9(_N1)>=LARGE_INT) or (y9(_N1)>=LARGE_INT)) or (y9(_N1)<=-(LARGE_INT))) or (__VERIFIER_nondet_int4(_N1)<=0))
+(_n1<_N1) -> ((((x9(_n1)<LARGE_INT) and (y9(_n1)<LARGE_INT)) and (y9(_n1)>-(LARGE_INT))) and (__VERIFIER_nondet_int4(_n1)>0))
+
+4. Assumption :
+
+5. Assertion :
+((x9(_N1)<4) or (y9(_N1)>2))

@@ -1,0 +1,97 @@
+Program Body
+{
+  int _1DUMMY;
+  _1DUMMY = 0;
+  _1DUMMY = count_down(y, z);
+}
+
+Function Name:
+start
+Return Type:
+void
+Input Variables:
+{ y:int z:int}
+Local Variables:
+{ _1DUMMY:int}
+Program Body
+{
+  int _1DUMMY;
+  _1DUMMY = 0;
+  if (x > y)
+  {
+    x = x - 1;
+    _1DUMMY = count_up(x, y);
+  }
+
+}
+
+Function Name:
+count_down
+Return Type:
+void
+Input Variables:
+{ y:int x:int}
+Local Variables:
+{ _1DUMMY:int}
+Program Body
+{
+  int _1DUMMY;
+  _1DUMMY = 0;
+  if ((y + 1) < x)
+  {
+    y = y + 2;
+    _1DUMMY = count_down(x, y);
+  }
+
+}
+
+Function Name:
+count_up
+Return Type:
+void
+Input Variables:
+{ y:int x:int}
+Local Variables:
+{ _1DUMMY:int}
+
+Output in normal notation:
+1. Frame axioms:
+y1(y) = y
+z1(z) = z
+
+2. Output equations:
+_1DUMMY1(y,z) = count_down(y,z)
+
+3. Other axioms:
+
+4. Assumption :
+
+5. Assertion :
+
+Output in normal notation:
+1. Frame axioms:
+y1(y) = y
+
+2. Output equations:
+x1(x,y) = ite((x>y),(x-1),x)
+_1DUMMY1(x,y) = ite((x>y),count_up((x-1),y),0)
+
+3. Other axioms:
+
+4. Assumption :
+
+5. Assertion :
+
+Output in normal notation:
+1. Frame axioms:
+x1(x) = x
+
+2. Output equations:
+y1(y,x) = ite(((y+1)<x),(y+2),y)
+_1DUMMY1(y,x) = ite(((y+1)<x),count_down(x,(y+2)),0)
+
+3. Other axioms:
+
+4. Assumption :
+
+5. Assertion :

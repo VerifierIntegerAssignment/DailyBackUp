@@ -1,0 +1,60 @@
+Program Body
+{
+  int break_1_flag;
+  break_1_flag = 0;
+  int n;
+  int x;
+  x = 0;
+  while ((x < n) && (break_1_flag == 0))
+  {
+    break_1_flag = 0;
+    if (__VERIFIER_nondet_int() > 0)
+    {
+      break_1_flag = 1;
+    }
+
+    if (break_1_flag == 0)
+    {
+      x = x + 1;
+    }
+
+  }
+
+  while (x < n)
+  {
+    x = x + 1;
+  }
+
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ x:int break_1_flag:int n:int}
+
+Output in normal notation:
+1. Frame axioms:
+n1 = n
+
+2. Output equations:
+x1 = (_N2+x5(_N1))
+break_1_flag1 = break_1_flag5(_N1)
+
+3. Other axioms:
+x5((_n1+1)) = ite((ite((__VERIFIER_nondet_int2(_n1)>0),1,0)==0),(x5(_n1)+1),x5(_n1))
+break_1_flag5((_n1+1)) = ite((__VERIFIER_nondet_int2(_n1)>0),1,0)
+x5(0) = 0
+break_1_flag5(0) = 0
+((x5(_N1)>=n) or (break_1_flag5(_N1)!=0))
+(_n1<_N1) -> ((x5(_n1)<n) and (break_1_flag5(_n1)==0))
+(_N2>=(n-x5(_N1)))
+(_n2<_N2) -> ((_n2+x5(_N1))<n)
+
+4. Assumption :
+
+5. Assertion :
+VIAP_STANDARD_OUTPUT_True

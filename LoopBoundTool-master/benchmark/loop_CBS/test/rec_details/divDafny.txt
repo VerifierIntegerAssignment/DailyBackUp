@@ -1,0 +1,46 @@
+pritom@pritom-VirtualBox:~/mainDev/viap_new$ ./viap_tool.py --spec=ReachSafety.prp rec_eq/divDafny.c
+Program Body
+{
+  int X;
+  int Y;
+  int r;
+  int q;
+  r = X;
+  q = 0;
+  while (r >= Y)
+  {
+    r = r - Y;
+    q = q + 1;
+  }
+
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ Y:int X:int r:int q:int}
+
+Output in normal notation:
+1. Frame axioms:
+Y1 = Y
+X1 = X
+
+2. Output equations:
+q1 = q2(_N1)
+r1 = r2(_N1)
+
+3. Other axioms:
+q2((_n1+1)) = (q2(_n1)+1)
+r2((_n1+1)) = (r2(_n1)-Y)
+q2(0) = 0
+r2(0) = X
+(r2(_N1)<Y)
+(_n1<_N1) -> (r2(_n1)>=Y)
+
+4. Assumption :
+
+5. Assertion :

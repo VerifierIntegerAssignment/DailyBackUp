@@ -1,0 +1,49 @@
+Program Body
+{
+  int x;
+  int z;
+  int n;
+  while (x < n)
+  {
+    if (z > x)
+    {
+      x = x + 1;
+    }
+    else
+    {
+      z = z + 1;
+    }
+
+  }
+
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ x:int z:int n:int}
+
+Output in normal notation:
+1. Frame axioms:
+n1 = n
+
+2. Output equations:
+x1 = x3(_N1)
+z1 = z3(_N1)
+
+3. Other axioms:
+x3((_n1+1)) = ite((z3(_n1)>x3(_n1)),(x3(_n1)+1),x3(_n1))
+z3((_n1+1)) = ite((z3(_n1)>x3(_n1)),z3(_n1),(z3(_n1)+1))
+x3(0) = x
+z3(0) = z
+(0<=(-(n)+x3(_N1)))
+(_n1<_N1) -> (x3(_n1)<n)
+
+4. Assumption :
+
+5. Assertion :
+VIAP_STANDARD_OUTPUT_True

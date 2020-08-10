@@ -1,0 +1,49 @@
+Program Body
+{
+  int n;
+  int flag;
+  flag = 1;
+  while (flag > 0)
+  {
+    if (n > 0)
+    {
+      n = n - 1;
+      flag = 1;
+    }
+    else
+    {
+      flag = 0;
+    }
+
+  }
+
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ flag:int n:int}
+
+Output in normal notation:
+1. Frame axioms:
+
+2. Output equations:
+flag1 = flag4(_N1)
+n1 = n4(_N1)
+
+3. Other axioms:
+flag4((_n1+1)) = ite((n4(_n1)>0),1,0)
+n4((_n1+1)) = ite((n4(_n1)>0),(n4(_n1)-1),n4(_n1))
+flag4(0) = 1
+n4(0) = n
+(0<=-(flag4(_N1)))
+(_n1<_N1) -> (flag4(_n1)>0)
+
+4. Assumption :
+
+5. Assertion :
+VIAP_STANDARD_OUTPUT_True

@@ -1,0 +1,42 @@
+Program Body
+{
+  int x;
+  int y;
+  while (x < y)
+  {
+    x = x + 1;
+  }
+
+  while (y < x)
+  {
+    y = y + 1;
+  }
+
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ y:int x:int}
+
+Output in normal notation:
+1. Frame axioms:
+
+2. Output equations:
+y1 = (_N2+y)
+x1 = (_N1+x)
+
+3. Other axioms:
+(_N1>=(-(x)+y))
+(_n1<_N1) -> ((_n1+x)<y)
+(_N2>=((_N1+x)-y))
+(_n2<_N2) -> ((_n2+y)<(_N1+x))
+
+4. Assumption :
+
+5. Assertion :
+VIAP_STANDARD_OUTPUT_True

@@ -1,0 +1,414 @@
+
+
+a1(b,e,d) = a60(_N4(b,e,d),b,e,d)
+break_8_flag1(b,e,d) = break_8_flag60(_N4(b,e,d),b,e,d)
+c1(c,b,e,d) = c60(_N4(b,e,d),c,b,e,d)
+e1(e,b,d) = e60(_N4(b,e,d),e,b,d)
+d1(d,b,e) = d60(_N4(b,e,d),d,b,e)
+break_12_flag1(b,e,d) = break_12_flag60(_N4(b,e,d),b,e,d)
+break_10_flag1(b,e,d) = break_10_flag60(_N4(b,e,d),b,e,d)
+break_11_flag1(b,e,d) = break_11_flag60(_N4(b,e,d),b,e,d)
+break_4_flag1(b,e,d) = break_4_flag60(_N4(b,e,d),b,e,d)
+break_1_flag1(b,e,d) = break_1_flag60(_N4(b,e,d),b,e,d)
+break_3_flag1(b,e,d) = break_3_flag60(_N4(b,e,d),b,e,d)
+break_5_flag1(b,e,d) = break_5_flag60(_N4(b,e,d),b,e,d)
+break_2_flag1(b,e,d) = break_2_flag60(_N4(b,e,d),b,e,d)
+break_7_flag1(b,e,d) = break_7_flag60(_N4(b,e,d),b,e,d)
+break_9_flag1(b,e,d) = break_9_flag60(_N4(b,e,d),b,e,d)
+break_6_flag1(b,e,d) = break_6_flag60(_N4(b,e,d),b,e,d)
+
+3. Other axioms:
+break_2_flag10((_n1+1),_n2,_n3,_n4,b,e,d) = ite((ite((d10(_n1,_n2,_n3,_n4,b,e,d)>=e10(_n1,_n2,_n3,_n4,b,e,d)),0,ite((e10(_n1,_n2,_n3,_n4,b,e,d)>=(d10(_n1,_n2,_n3,_n4,b,e,d)+1)),1,0))==0),ite(((ite((d10(_n1,_n2,_n3,_n4,b,e,d)>=e10(_n1,_n2,_n3,_n4,b,e,d)),(e10(_n1,_n2,_n3,_n4,b,e,d)+1),e10(_n1,_n2,_n3,_n4,b,e,d))<(ite((d10(_n1,_n2,_n3,_n4,b,e,d)>=e10(_n1,_n2,_n3,_n4,b,e,d)),d10(_n1,_n2,_n3,_n4,b,e,d),ite((e10(_n1,_n2,_n3,_n4,b,e,d)>=(d10(_n1,_n2,_n3,_n4,b,e,d)+1)),(d10(_n1,_n2,_n3,_n4,b,e,d)+1),d10(_n1,_n2,_n3,_n4,b,e,d)))+1)) and (ite((d10(_n1,_n2,_n3,_n4,b,e,d)>=e10(_n1,_n2,_n3,_n4,b,e,d)),d10(_n1,_n2,_n3,_n4,b,e,d),ite((e10(_n1,_n2,_n3,_n4,b,e,d)>=(d10(_n1,_n2,_n3,_n4,b,e,d)+1)),(d10(_n1,_n2,_n3,_n4,b,e,d)+1),d10(_n1,_n2,_n3,_n4,b,e,d)))<ite((d10(_n1,_n2,_n3,_n4,b,e,d)>=e10(_n1,_n2,_n3,_n4,b,e,d)),(e10(_n1,_n2,_n3,_n4,b,e,d)+1),e10(_n1,_n2,_n3,_n4,b,e,d)))),1,0),0)
+e10((_n1+1),_n2,_n3,_n4,b,e,d) = ite((d10(_n1,_n2,_n3,_n4,b,e,d)>=e10(_n1,_n2,_n3,_n4,b,e,d)),(e10(_n1,_n2,_n3,_n4,b,e,d)+1),e10(_n1,_n2,_n3,_n4,b,e,d))
+d10((_n1+1),_n2,_n3,_n4,b,e,d) = ite((d10(_n1,_n2,_n3,_n4,b,e,d)>=e10(_n1,_n2,_n3,_n4,b,e,d)),d10(_n1,_n2,_n3,_n4,b,e,d),ite((e10(_n1,_n2,_n3,_n4,b,e,d)>=(d10(_n1,_n2,_n3,_n4,b,e,d)+1)),(d10(_n1,_n2,_n3,_n4,b,e,d)+1),d10(_n1,_n2,_n3,_n4,b,e,d)))
+break_1_flag10((_n1+1),_n2,_n3,_n4,b,e,d) = ite((d10(_n1,_n2,_n3,_n4,b,e,d)>=e10(_n1,_n2,_n3,_n4,b,e,d)),0,ite((e10(_n1,_n2,_n3,_n4,b,e,d)>=(d10(_n1,_n2,_n3,_n4,b,e,d)+1)),1,0))
+break_2_flag10(0,_n2,_n3,_n4,b,e,d) = break_2_flag26(_n2,_n3,_n4,b,e,d)
+e10(0,_n2,_n3,_n4,b,e,d) = 1
+d10(0,_n2,_n3,_n4,b,e,d) = d26(_n2,_n3,_n4,b,e,d)
+break_1_flag10(0,_n2,_n3,_n4,b,e,d) = break_1_flag26(_n2,_n3,_n4,b,e,d)
+(((1<=0) or (break_2_flag10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d)!=0)) or (break_1_flag10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d)!=0))
+(_n1<_N1(_n2,_n3,_n4,b,e,d)) -> (((1>0) and (break_2_flag10(_n1,_n2,_n3,_n4,b,e,d)==0)) and (break_1_flag10(_n1,_n2,_n3,_n4,b,e,d)==0))
+
+
+
+
+c26((_n2+1),_n3,_n4,b,e,d) = ite((b>=d26(_n2,_n3,_n4,b,e,d)),c26(_n2,_n3,_n4,b,e,d),ite((d26(_n2,_n3,_n4,b,e,d)>=(b+1)),(c26(_n2,_n3,_n4,b,e,d)+1),c26(_n2,_n3,_n4,b,e,d)))
+e26((_n2+1),_n3,_n4,b,e,d) = ite((b>=d26(_n2,_n3,_n4,b,e,d)),e10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),e26(_n2,_n3,_n4,b,e,d))
+d26((_n2+1),_n3,_n4,b,e,d) = ite((b>=d26(_n2,_n3,_n4,b,e,d)),d10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),d26(_n2,_n3,_n4,b,e,d))
+break_4_flag26((_n2+1),_n3,_n4,b,e,d) = ite((ite((b>=d26(_n2,_n3,_n4,b,e,d)),0,ite((d26(_n2,_n3,_n4,b,e,d)>=(b+1)),1,0))==0),ite(((ite((b>=d26(_n2,_n3,_n4,b,e,d)),d10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),d26(_n2,_n3,_n4,b,e,d))>=(b+1)) or (b>=ite((b>=d26(_n2,_n3,_n4,b,e,d)),d10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),d26(_n2,_n3,_n4,b,e,d)))),ite(((ite((b>=d26(_n2,_n3,_n4,b,e,d)),e10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),e26(_n2,_n3,_n4,b,e,d))<(ite((b>=d26(_n2,_n3,_n4,b,e,d)),d10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),d26(_n2,_n3,_n4,b,e,d))+1)) and (ite((b>=d26(_n2,_n3,_n4,b,e,d)),d10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),d26(_n2,_n3,_n4,b,e,d))<ite((b>=d26(_n2,_n3,_n4,b,e,d)),e10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),e26(_n2,_n3,_n4,b,e,d)))),1,0),0),0)
+break_1_flag26((_n2+1),_n3,_n4,b,e,d) = ite((b>=d26(_n2,_n3,_n4,b,e,d)),break_1_flag10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),break_1_flag26(_n2,_n3,_n4,b,e,d))
+break_3_flag26((_n2+1),_n3,_n4,b,e,d) = ite((b>=d26(_n2,_n3,_n4,b,e,d)),0,ite((d26(_n2,_n3,_n4,b,e,d)>=(b+1)),1,0))
+break_5_flag26((_n2+1),_n3,_n4,b,e,d) = ite((ite((b>=d26(_n2,_n3,_n4,b,e,d)),0,ite((d26(_n2,_n3,_n4,b,e,d)>=(b+1)),1,0))==0),ite((ite(((ite((b>=d26(_n2,_n3,_n4,b,e,d)),d10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),d26(_n2,_n3,_n4,b,e,d))>=(b+1)) or (b>=ite((b>=d26(_n2,_n3,_n4,b,e,d)),d10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),d26(_n2,_n3,_n4,b,e,d)))),ite(((ite((b>=d26(_n2,_n3,_n4,b,e,d)),e10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),e26(_n2,_n3,_n4,b,e,d))<(ite((b>=d26(_n2,_n3,_n4,b,e,d)),d10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),d26(_n2,_n3,_n4,b,e,d))+1)) and (ite((b>=d26(_n2,_n3,_n4,b,e,d)),d10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),d26(_n2,_n3,_n4,b,e,d))<ite((b>=d26(_n2,_n3,_n4,b,e,d)),e10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),e26(_n2,_n3,_n4,b,e,d)))),1,0),0)==0),ite(((ite((b>=d26(_n2,_n3,_n4,b,e,d)),d10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),d26(_n2,_n3,_n4,b,e,d))<(b+1)) and (b<ite((b>=d26(_n2,_n3,_n4,b,e,d)),d10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),d26(_n2,_n3,_n4,b,e,d)))),1,0),0),0)
+break_2_flag26((_n2+1),_n3,_n4,b,e,d) = ite((b>=d26(_n2,_n3,_n4,b,e,d)),break_2_flag10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),break_2_flag26(_n2,_n3,_n4,b,e,d))
+c26(0,_n3,_n4,b,e,d) = c47(_n3,_n4,b,e,d)
+e26(0,_n3,_n4,b,e,d) = e47(_n3,_n4,b,e,d)
+d26(0,_n3,_n4,b,e,d) = (a47(_n3,_n4,b,e,d)+1)
+break_4_flag26(0,_n3,_n4,b,e,d) = break_4_flag47(_n3,_n4,b,e,d)
+break_1_flag26(0,_n3,_n4,b,e,d) = break_1_flag47(_n3,_n4,b,e,d)
+break_3_flag26(0,_n3,_n4,b,e,d) = break_3_flag47(_n3,_n4,b,e,d)
+break_5_flag26(0,_n3,_n4,b,e,d) = break_5_flag47(_n3,_n4,b,e,d)
+break_2_flag26(0,_n3,_n4,b,e,d) = break_2_flag47(_n3,_n4,b,e,d)
+((((1<=0) or (break_3_flag26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d)!=0)) or (break_5_flag26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d)!=0)) or (break_4_flag26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d)!=0))
+(_n2<_N2(_n3,_n4,b,e,d)) -> ((((1>0) and (break_3_flag26(_n2,_n3,_n4,b,e,d)==0)) and (break_5_flag26(_n2,_n3,_n4,b,e,d)==0)) and (break_4_flag26(_n2,_n3,_n4,b,e,d)==0))
+a47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))
+break_8_flag47((_n3+1),_n4,b,e,d) = ite((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),0,ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),1,0))==0),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d))>=(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))+1)) or (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))>=ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d)))),ite((ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))>=(b+1)) or (b>=ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e)))),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d))<(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))+1)) and (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))<ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d)))),1,0),0)==0),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))<(b+1)) and (b<ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e)))),1,0),0),0),0)
+c47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d))
+e47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d))
+d47((_n3+1),_n4,b,d,e) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))
+break_4_flag47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),break_4_flag26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),break_4_flag47(_n3,_n4,b,e,d))
+break_1_flag47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),break_1_flag26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),break_1_flag47(_n3,_n4,b,e,d))
+break_3_flag47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),break_3_flag26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),break_3_flag47(_n3,_n4,b,e,d))
+break_5_flag47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),break_5_flag26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),break_5_flag47(_n3,_n4,b,e,d))
+break_2_flag47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),break_2_flag26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),break_2_flag47(_n3,_n4,b,e,d))
+break_7_flag47((_n3+1),_n4,b,e,d) = ite((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),0,ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),1,0))==0),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d))>=(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))+1)) or (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))>=ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d)))),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))>=(b+1)) or (b>=ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e)))),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d))<(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))+1)) and (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))<ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d)))),1,0),0),0),0)
+break_9_flag47((_n3+1),_n4,b,e,d) = ite((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),0,ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),1,0))==0),ite(((ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d))>=(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))+1)) or (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))>=ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d)))),ite((ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))>=(b+1)) or (b>=ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e)))),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d))<(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))+1)) and (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))<ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d)))),1,0),0)==0),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))<(b+1)) and (b<ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e)))),1,0),0),0)==0) and (ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d))>=(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))+1)) or (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))>=ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d)))),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))>=(b+1)) or (b>=ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e)))),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d))<(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))+1)) and (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))<ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d)))),1,0),0),0)==0)),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d))<(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))+1)) and (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))<ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d)))),1,0),0),0)
+break_6_flag47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),0,ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),1,0))
+a47(0,_n4,b,e,d) = a60(_n4,b,e,d)
+break_8_flag47(0,_n4,b,e,d) = break_8_flag60(_n4,b,e,d)
+c47(0,_n4,b,e,d) = 1
+e47(0,_n4,b,e,d) = e60(_n4,e,b,d)
+d47(0,_n4,b,d,e) = d60(_n4,d,b,e)
+break_4_flag47(0,_n4,b,e,d) = break_4_flag60(_n4,b,e,d)
+break_1_flag47(0,_n4,b,e,d) = break_1_flag60(_n4,b,e,d)
+break_3_flag47(0,_n4,b,e,d) = break_3_flag60(_n4,b,e,d)
+break_5_flag47(0,_n4,b,e,d) = break_5_flag60(_n4,b,e,d)
+break_2_flag47(0,_n4,b,e,d) = break_2_flag60(_n4,b,e,d)
+break_7_flag47(0,_n4,b,e,d) = break_7_flag60(_n4,b,e,d)
+break_9_flag47(0,_n4,b,e,d) = break_9_flag60(_n4,b,e,d)
+break_6_flag47(0,_n4,b,e,d) = break_6_flag60(_n4,b,e,d)
+(((((1<=0) or (break_8_flag47(_N3(_n4,b,e,d),_n4,b,e,d)!=0)) or (break_7_flag47(_N3(_n4,b,e,d),_n4,b,e,d)!=0)) or (break_9_flag47(_N3(_n4,b,e,d),_n4,b,e,d)!=0)) or (break_6_flag47(_N3(_n4,b,e,d),_n4,b,e,d)!=0))
+(_n3<_N3(_n4,b,e,d)) -> (((((1>0) and (break_8_flag47(_n3,_n4,b,e,d)==0)) and (break_7_flag47(_n3,_n4,b,e,d)==0)) and (break_9_flag47(_n3,_n4,b,e,d)==0)) and (break_6_flag47(_n3,_n4,b,e,d)==0))
+a60((_n4+1),b,e,d) = a47(_N3(_n4,b,e,d),_n4,b,e,d)
+break_8_flag60((_n4+1),b,e,d) = break_8_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+c60((_n4+1),c,b,e,d) = c47(_N3(_n4,b,e,d),_n4,b,e,d)
+e60((_n4+1),e,b,d) = e47(_N3(_n4,b,e,d),_n4,b,e,d)
+d60((_n4+1),d,b,e) = d47(_N3(_n4,b,e,d),_n4,b,d,e)
+break_12_flag60((_n4+1),b,e,d) = ite((ite(((e47(_N3(_n4,b,e,d),_n4,b,e,d)<(d47(_N3(_n4,b,e,d),_n4,b,d,e)+1)) and (d47(_N3(_n4,b,e,d),_n4,b,d,e)<e47(_N3(_n4,b,e,d),_n4,b,e,d))),1,0)==0),ite((ite(((d47(_N3(_n4,b,e,d),_n4,b,d,e)<(b+1)) and (b<d47(_N3(_n4,b,e,d),_n4,b,d,e))),1,0)==0),ite(((c47(_N3(_n4,b,e,d),_n4,b,e,d)<(a47(_N3(_n4,b,e,d),_n4,b,e,d)+1)) and (a47(_N3(_n4,b,e,d),_n4,b,e,d)<c47(_N3(_n4,b,e,d),_n4,b,e,d))),1,0),0),0)
+break_10_flag60((_n4+1),b,e,d) = ite(((e47(_N3(_n4,b,e,d),_n4,b,e,d)<(d47(_N3(_n4,b,e,d),_n4,b,d,e)+1)) and (d47(_N3(_n4,b,e,d),_n4,b,d,e)<e47(_N3(_n4,b,e,d),_n4,b,e,d))),1,0)
+break_11_flag60((_n4+1),b,e,d) = ite((ite(((e47(_N3(_n4,b,e,d),_n4,b,e,d)<(d47(_N3(_n4,b,e,d),_n4,b,d,e)+1)) and (d47(_N3(_n4,b,e,d),_n4,b,d,e)<e47(_N3(_n4,b,e,d),_n4,b,e,d))),1,0)==0),ite(((d47(_N3(_n4,b,e,d),_n4,b,d,e)<(b+1)) and (b<d47(_N3(_n4,b,e,d),_n4,b,d,e))),1,0),0)
+break_4_flag60((_n4+1),b,e,d) = break_4_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+break_1_flag60((_n4+1),b,e,d) = break_1_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+break_3_flag60((_n4+1),b,e,d) = break_3_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+break_5_flag60((_n4+1),b,e,d) = break_5_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+break_2_flag60((_n4+1),b,e,d) = break_2_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+break_7_flag60((_n4+1),b,e,d) = break_7_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+break_9_flag60((_n4+1),b,e,d) = break_9_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+break_6_flag60((_n4+1),b,e,d) = break_6_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+a60(0,b,e,d) = 1
+break_8_flag60(0,b,e,d) = 0
+c60(0,c,b,e,d) = c
+e60(0,e,b,d) = e
+d60(0,d,b,e) = d
+break_12_flag60(0,b,e,d) = 0
+break_10_flag60(0,b,e,d) = 0
+break_11_flag60(0,b,e,d) = 0
+break_4_flag60(0,b,e,d) = 0
+break_1_flag60(0,b,e,d) = 0
+break_3_flag60(0,b,e,d) = 0
+break_5_flag60(0,b,e,d) = 0
+break_2_flag60(0,b,e,d) = 0
+break_7_flag60(0,b,e,d) = 0
+break_9_flag60(0,b,e,d) = 0
+break_6_flag60(0,b,e,d) = 0
+((((b<a60(_N4(b,e,d),b,e,d)) or (break_10_flag60(_N4(b,e,d),b,e,d)!=0)) or (break_11_flag60(_N4(b,e,d),b,e,d)!=0)) or (break_12_flag60(_N4(b,e,d),b,e,d)!=0))
+(_n4<_N4(b,e,d)) -> ((((b>=a60(_n4,b,e,d)) and (break_10_flag60(_n4,b,e,d)==0)) and (break_11_flag60(_n4,b,e,d)==0)) and (break_12_flag60(_n4,b,e,d)==0))
+
+#################################################################################################################################################################
+
+From the first loop we can derived 
+
+e10(_n1,_n2,_n3,_n4,b,e,d) = 1+_n1
+d10(_n1,_n2,_n3,_n4,b,e,d) = d26(_n2,_n3,_n4,b,e,d)+1
+break_1_flag10(_n1,_n2,_n3,_n4,b,e,d) = 1
+
+
+
+
+
+c26((_n2+1),_n3,_n4,b,e,d) = ite((b>=d26(_n2,_n3,_n4,b,e,d)),c26(_n2,_n3,_n4,b,e,d),ite((d26(_n2,_n3,_n4,b,e,d)>=(b+1)),(c26(_n2,_n3,_n4,b,e,d)+1),c26(_n2,_n3,_n4,b,e,d)))
+e26((_n2+1),_n3,_n4,b,e,d) = ite((b>=d26(_n2,_n3,_n4,b,e,d)),1 +_N1(_n2,_n3,_n4,b,e,d),e26(_n2,_n3,_n4,b,e,d))
+d26((_n2+1),_n3,_n4,b,e,d) = ite((b>=d26(_n2,_n3,_n4,b,e,d)),d26(_n2,_n3,_n4,b,e,d)+1,d26(_n2,_n3,_n4,b,e,d))
+break_2_flag26((_n2+1),_n3,_n4,b,e,d) = ite((b>=d26(_n2,_n3,_n4,b,e,d)),break_2_flag10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),break_2_flag26(_n2,_n3,_n4,b,e,d))
+break_1_flag26((_n2+1),_n3,_n4,b,e,d) = ite((b>=d26(_n2,_n3,_n4,b,e,d)),break_1_flag10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),break_1_flag26(_n2,_n3,_n4,b,e,d))
+break_3_flag26((_n2+1),_n3,_n4,b,e,d) = ite((b>=d26(_n2,_n3,_n4,b,e,d)),0,ite((d26(_n2,_n3,_n4,b,e,d)>=(b+1)),1,0))
+break_4_flag26((_n2+1),_n3,_n4,b,e,d) = ite((ite((b>=d26(_n2,_n3,_n4,b,e,d)),0,ite((d26(_n2,_n3,_n4,b,e,d)>=(b+1)),1,0))==0),ite(((ite((b>=d26(_n2,_n3,_n4,b,e,d)),d10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),d26(_n2,_n3,_n4,b,e,d))>=(b+1)) or (b>=ite((b>=d26(_n2,_n3,_n4,b,e,d)),d10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),d26(_n2,_n3,_n4,b,e,d)))),ite(((ite((b>=d26(_n2,_n3,_n4,b,e,d)),e10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),e26(_n2,_n3,_n4,b,e,d))<(ite((b>=d26(_n2,_n3,_n4,b,e,d)),d10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),d26(_n2,_n3,_n4,b,e,d))+1)) and (ite((b>=d26(_n2,_n3,_n4,b,e,d)),d10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),d26(_n2,_n3,_n4,b,e,d))<ite((b>=d26(_n2,_n3,_n4,b,e,d)),e10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),e26(_n2,_n3,_n4,b,e,d)))),1,0),0),0)
+break_1_flag26((_n2+1),_n3,_n4,b,e,d) = ite((b>=d26(_n2,_n3,_n4,b,e,d)),break_1_flag10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),break_1_flag26(_n2,_n3,_n4,b,e,d))
+break_3_flag26((_n2+1),_n3,_n4,b,e,d) = ite((b>=d26(_n2,_n3,_n4,b,e,d)),0,ite((d26(_n2,_n3,_n4,b,e,d)>=(b+1)),1,0))
+break_5_flag26((_n2+1),_n3,_n4,b,e,d) = ite((ite((b>=d26(_n2,_n3,_n4,b,e,d)),0,ite((d26(_n2,_n3,_n4,b,e,d)>=(b+1)),1,0))==0),ite((ite(((ite((b>=d26(_n2,_n3,_n4,b,e,d)),d10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),d26(_n2,_n3,_n4,b,e,d))>=(b+1)) or (b>=ite((b>=d26(_n2,_n3,_n4,b,e,d)),d10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),d26(_n2,_n3,_n4,b,e,d)))),ite(((ite((b>=d26(_n2,_n3,_n4,b,e,d)),e10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),e26(_n2,_n3,_n4,b,e,d))<(ite((b>=d26(_n2,_n3,_n4,b,e,d)),d10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),d26(_n2,_n3,_n4,b,e,d))+1)) and (ite((b>=d26(_n2,_n3,_n4,b,e,d)),d10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),d26(_n2,_n3,_n4,b,e,d))<ite((b>=d26(_n2,_n3,_n4,b,e,d)),e10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),e26(_n2,_n3,_n4,b,e,d)))),1,0),0)==0),ite(((ite((b>=d26(_n2,_n3,_n4,b,e,d)),d10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),d26(_n2,_n3,_n4,b,e,d))<(b+1)) and (b<ite((b>=d26(_n2,_n3,_n4,b,e,d)),d10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),d26(_n2,_n3,_n4,b,e,d)))),1,0),0),0)
+break_2_flag26((_n2+1),_n3,_n4,b,e,d) = ite((b>=d26(_n2,_n3,_n4,b,e,d)),break_2_flag10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d),break_2_flag26(_n2,_n3,_n4,b,e,d))
+c26(0,_n3,_n4,b,e,d) = c47(_n3,_n4,b,e,d)
+e26(0,_n3,_n4,b,e,d) = e47(_n3,_n4,b,e,d)
+d26(0,_n3,_n4,b,e,d) = (a47(_n3,_n4,b,e,d)+1)
+break_4_flag26(0,_n3,_n4,b,e,d) = break_4_flag47(_n3,_n4,b,e,d)
+break_1_flag26(0,_n3,_n4,b,e,d) = break_1_flag47(_n3,_n4,b,e,d)
+break_3_flag26(0,_n3,_n4,b,e,d) = break_3_flag47(_n3,_n4,b,e,d)
+break_5_flag26(0,_n3,_n4,b,e,d) = break_5_flag47(_n3,_n4,b,e,d)
+break_2_flag26(0,_n3,_n4,b,e,d) = break_2_flag47(_n3,_n4,b,e,d)
+((((1<=0) or (break_3_flag26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d)!=0)) or (break_5_flag26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d)!=0)) or (break_4_flag26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d)!=0))
+(_n2<_N2(_n3,_n4,b,e,d)) -> ((((1>0) and (break_3_flag26(_n2,_n3,_n4,b,e,d)==0)) and (break_5_flag26(_n2,_n3,_n4,b,e,d)==0)) and (break_4_flag26(_n2,_n3,_n4,b,e,d)==0))
+
+#################################################################################################################################################################
+
+
+c26(_n2,_n3,_n4,b,e,d) = c47(_n3,_n4,b,e,d)+ 1
+e26(_n2,_n3,_n4,b,e,d) = 1 + Sum(_N1(_n2,_n3,_n4,b,e,d)))
+d26(_n2,_n3,_n4,b,e,d) = (a47(_n3,_n4,b,e,d)+1)+_n2
+break_2_flag26(_n2,_n3,_n4,b,e,d) = 1
+break_3_flag26(_n2,_n3,_n4,b,e,d) = 1
+
+
+
+#################################################################################################################################################################
+
+a47(_n3,_n4,b,e,d) = a60(_n4,b,e,d)+1
+c47(_n3,_n4,b,e,d) = _n3+1
+e47(_n3,_n4,b,e,d) = 1 +Sum(Sum(_N1(_n2,_n3,_n4,b,e,d)))
+d47(_n3,_n4,b,d,e) = (a47(_n3,_n4,b,e,d)+1)+ _N2(_n3,_n4,b,e,d) = d60(_n4,d,b,e)+_n3+sum(_N2(_n3,_n4,b,e,d))
+break_2_flag26(_n2,_n3,_n4,b,e,d) = 1
+break_3_flag26(_n2,_n3,_n4,b,e,d) = 1
+break_6_flag47(_n3,_n4,b,e,d) = 1
+
+
+#################################################################################################################################################################
+
+a60(_n4,b,e,d) = a60(_n4,b,e,d)+1 = 1+_n4
+
+c60(_n4,c,b,e,d) = Sum(_N3(_n4,b,e,d))+1
+ 
+e60(_n4,e,b,d) = 1 +Sum(Sum(Sum(_N1(_n2,_n3,_n4,b,e,d))))
+
+d60((_n4+1),d,b,e) = d47(_N3(_n4,b,e,d),_n4,b,d,e) = d+Sum(_N3(_n4,b,e,d))+sum(_N2(_n3,_n4,b,e,d))
+
+
+
+
+
+
+
+
+
+a60((_n4+1),b,e,d) = a47(_N3(_n4,b,e,d),_n4,b,e,d)
+break_8_flag60((_n4+1),b,e,d) = break_8_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+c60((_n4+1),c,b,e,d) = c47(_N3(_n4,b,e,d),_n4,b,e,d)
+e60((_n4+1),e,b,d) = e47(_N3(_n4,b,e,d),_n4,b,e,d)
+d60((_n4+1),d,b,e) = d47(_N3(_n4,b,e,d),_n4,b,d,e)
+break_12_flag60((_n4+1),b,e,d) = ite((ite(((e47(_N3(_n4,b,e,d),_n4,b,e,d)<(d47(_N3(_n4,b,e,d),_n4,b,d,e)+1)) and (d47(_N3(_n4,b,e,d),_n4,b,d,e)<e47(_N3(_n4,b,e,d),_n4,b,e,d))),1,0)==0),ite((ite(((d47(_N3(_n4,b,e,d),_n4,b,d,e)<(b+1)) and (b<d47(_N3(_n4,b,e,d),_n4,b,d,e))),1,0)==0),ite(((c47(_N3(_n4,b,e,d),_n4,b,e,d)<(a47(_N3(_n4,b,e,d),_n4,b,e,d)+1)) and (a47(_N3(_n4,b,e,d),_n4,b,e,d)<c47(_N3(_n4,b,e,d),_n4,b,e,d))),1,0),0),0)
+break_10_flag60((_n4+1),b,e,d) = ite(((e47(_N3(_n4,b,e,d),_n4,b,e,d)<(d47(_N3(_n4,b,e,d),_n4,b,d,e)+1)) and (d47(_N3(_n4,b,e,d),_n4,b,d,e)<e47(_N3(_n4,b,e,d),_n4,b,e,d))),1,0)
+break_11_flag60((_n4+1),b,e,d) = ite((ite(((e47(_N3(_n4,b,e,d),_n4,b,e,d)<(d47(_N3(_n4,b,e,d),_n4,b,d,e)+1)) and (d47(_N3(_n4,b,e,d),_n4,b,d,e)<e47(_N3(_n4,b,e,d),_n4,b,e,d))),1,0)==0),ite(((d47(_N3(_n4,b,e,d),_n4,b,d,e)<(b+1)) and (b<d47(_N3(_n4,b,e,d),_n4,b,d,e))),1,0),0)
+break_4_flag60((_n4+1),b,e,d) = break_4_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+break_1_flag60((_n4+1),b,e,d) = break_1_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+break_3_flag60((_n4+1),b,e,d) = break_3_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+break_5_flag60((_n4+1),b,e,d) = break_5_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+break_2_flag60((_n4+1),b,e,d) = break_2_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+break_7_flag60((_n4+1),b,e,d) = break_7_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+break_9_flag60((_n4+1),b,e,d) = break_9_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+break_6_flag60((_n4+1),b,e,d) = break_6_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+a60(0,b,e,d) = 1
+break_8_flag60(0,b,e,d) = 0
+c60(0,c,b,e,d) = c
+e60(0,e,b,d) = e
+d60(0,d,b,e) = d
+break_12_flag60(0,b,e,d) = 0
+break_10_flag60(0,b,e,d) = 0
+break_11_flag60(0,b,e,d) = 0
+break_4_flag60(0,b,e,d) = 0
+break_1_flag60(0,b,e,d) = 0
+break_3_flag60(0,b,e,d) = 0
+break_5_flag60(0,b,e,d) = 0
+break_2_flag60(0,b,e,d) = 0
+break_7_flag60(0,b,e,d) = 0
+break_9_flag60(0,b,e,d) = 0
+break_6_flag60(0,b,e,d) = 0
+((((b<a60(_N4(b,e,d),b,e,d)) or (break_10_flag60(_N4(b,e,d),b,e,d)!=0)) or (break_11_flag60(_N4(b,e,d),b,e,d)!=0)) or (break_12_flag60(_N4(b,e,d),b,e,d)!=0))
+(_n4<_N4(b,e,d)) -> ((((b>=a60(_n4,b,e,d)) and (break_10_flag60(_n4,b,e,d)==0)) and (break_11_flag60(_n4,b,e,d)==0)) and (break_12_flag60(_n4,b,e,d)==0))
+
+
+
+
+
+
+
+a47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))
+break_8_flag47((_n3+1),_n4,b,e,d) = ite((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),0,ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),1,0))==0),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d))>=(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))+1)) or (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))>=ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d)))),ite((ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))>=(b+1)) or (b>=ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e)))),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d))<(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))+1)) and (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))<ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d)))),1,0),0)==0),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))<(b+1)) and (b<ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e)))),1,0),0),0),0)
+c47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d))
+e47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d))
+d47((_n3+1),_n4,b,d,e) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))
+break_4_flag47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),break_4_flag26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),break_4_flag47(_n3,_n4,b,e,d))
+break_1_flag47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),break_1_flag26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),break_1_flag47(_n3,_n4,b,e,d))
+break_3_flag47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),break_3_flag26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),break_3_flag47(_n3,_n4,b,e,d))
+break_5_flag47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),break_5_flag26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),break_5_flag47(_n3,_n4,b,e,d))
+break_2_flag47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),break_2_flag26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),break_2_flag47(_n3,_n4,b,e,d))
+break_7_flag47((_n3+1),_n4,b,e,d) = ite((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),0,ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),1,0))==0),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d))>=(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))+1)) or (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))>=ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d)))),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))>=(b+1)) or (b>=ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e)))),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d))<(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))+1)) and (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))<ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d)))),1,0),0),0),0)
+break_9_flag47((_n3+1),_n4,b,e,d) = ite((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),0,ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),1,0))==0),ite(((ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d))>=(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))+1)) or (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))>=ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d)))),ite((ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))>=(b+1)) or (b>=ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e)))),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d))<(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))+1)) and (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))<ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d)))),1,0),0)==0),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))<(b+1)) and (b<ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e)))),1,0),0),0)==0) and (ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d))>=(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))+1)) or (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))>=ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d)))),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))>=(b+1)) or (b>=ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e)))),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d))<(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))+1)) and (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))<ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d)))),1,0),0),0)==0)),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d))<(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))+1)) and (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))<ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d)))),1,0),0),0)
+break_6_flag47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),0,ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),1,0))
+a47(0,_n4,b,e,d) = a60(_n4,b,e,d)
+break_8_flag47(0,_n4,b,e,d) = break_8_flag60(_n4,b,e,d)
+c47(0,_n4,b,e,d) = 1
+e47(0,_n4,b,e,d) = e60(_n4,e,b,d)
+d47(0,_n4,b,d,e) = d60(_n4,d,b,e)
+break_4_flag47(0,_n4,b,e,d) = break_4_flag60(_n4,b,e,d)
+break_1_flag47(0,_n4,b,e,d) = break_1_flag60(_n4,b,e,d)
+break_3_flag47(0,_n4,b,e,d) = break_3_flag60(_n4,b,e,d)
+break_5_flag47(0,_n4,b,e,d) = break_5_flag60(_n4,b,e,d)
+break_2_flag47(0,_n4,b,e,d) = break_2_flag60(_n4,b,e,d)
+break_7_flag47(0,_n4,b,e,d) = break_7_flag60(_n4,b,e,d)
+break_9_flag47(0,_n4,b,e,d) = break_9_flag60(_n4,b,e,d)
+break_6_flag47(0,_n4,b,e,d) = break_6_flag60(_n4,b,e,d)
+(((((1<=0) or (break_8_flag47(_N3(_n4,b,e,d),_n4,b,e,d)!=0)) or (break_7_flag47(_N3(_n4,b,e,d),_n4,b,e,d)!=0)) or (break_9_flag47(_N3(_n4,b,e,d),_n4,b,e,d)!=0)) or (break_6_flag47(_N3(_n4,b,e,d),_n4,b,e,d)!=0))
+(_n3<_N3(_n4,b,e,d)) -> (((((1>0) and (break_8_flag47(_n3,_n4,b,e,d)==0)) and (break_7_flag47(_n3,_n4,b,e,d)==0)) and (break_9_flag47(_n3,_n4,b,e,d)==0)) and (break_6_flag47(_n3,_n4,b,e,d)==0))
+
+
+
+
+
+
+
+
+
+
+
+a47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))
+break_8_flag47((_n3+1),_n4,b,e,d) = ite((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),0,ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),1,0))==0),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d))>=(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))+1)) or (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))>=ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d)))),ite((ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))>=(b+1)) or (b>=ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e)))),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d))<(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))+1)) and (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))<ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d)))),1,0),0)==0),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))<(b+1)) and (b<ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e)))),1,0),0),0),0)
+c47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d))
+e47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d))
+d47((_n3+1),_n4,b,d,e) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))
+break_4_flag47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),break_4_flag26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),break_4_flag47(_n3,_n4,b,e,d))
+break_1_flag47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),break_1_flag26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),break_1_flag47(_n3,_n4,b,e,d))
+break_3_flag47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),break_3_flag26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),break_3_flag47(_n3,_n4,b,e,d))
+break_5_flag47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),break_5_flag26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),break_5_flag47(_n3,_n4,b,e,d))
+break_2_flag47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),break_2_flag26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),break_2_flag47(_n3,_n4,b,e,d))
+break_7_flag47((_n3+1),_n4,b,e,d) = ite((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),0,ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),1,0))==0),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d))>=(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))+1)) or (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))>=ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d)))),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))>=(b+1)) or (b>=ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e)))),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d))<(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))+1)) and (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))<ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d)))),1,0),0),0),0)
+break_9_flag47((_n3+1),_n4,b,e,d) = ite((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),0,ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),1,0))==0),ite(((ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d))>=(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))+1)) or (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))>=ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d)))),ite((ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))>=(b+1)) or (b>=ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e)))),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d))<(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))+1)) and (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))<ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d)))),1,0),0)==0),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))<(b+1)) and (b<ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e)))),1,0),0),0)==0) and (ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d))>=(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))+1)) or (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))>=ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d)))),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))>=(b+1)) or (b>=ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e)))),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d))<(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))+1)) and (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),d26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),d47(_n3,_n4,b,d,e))<ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),e26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),e47(_n3,_n4,b,e,d)))),1,0),0),0)==0)),ite(((ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d))<(ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))+1)) and (ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),a47(_n3,_n4,b,e,d),ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),(a47(_n3,_n4,b,e,d)+1),a47(_n3,_n4,b,e,d)))<ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),c26(_N2(_n3,_n4,b,e,d),_n3,_n4,b,e,d),c47(_n3,_n4,b,e,d)))),1,0),0),0)
+break_6_flag47((_n3+1),_n4,b,e,d) = ite((a47(_n3,_n4,b,e,d)>=c47(_n3,_n4,b,e,d)),0,ite((c47(_n3,_n4,b,e,d)>=(a47(_n3,_n4,b,e,d)+1)),1,0))
+a47(0,_n4,b,e,d) = a60(_n4,b,e,d)
+break_8_flag47(0,_n4,b,e,d) = break_8_flag60(_n4,b,e,d)
+c47(0,_n4,b,e,d) = 1
+e47(0,_n4,b,e,d) = e60(_n4,e,b,d)
+d47(0,_n4,b,d,e) = d60(_n4,d,b,e)
+break_4_flag47(0,_n4,b,e,d) = break_4_flag60(_n4,b,e,d)
+break_1_flag47(0,_n4,b,e,d) = break_1_flag60(_n4,b,e,d)
+break_3_flag47(0,_n4,b,e,d) = break_3_flag60(_n4,b,e,d)
+break_5_flag47(0,_n4,b,e,d) = break_5_flag60(_n4,b,e,d)
+break_2_flag47(0,_n4,b,e,d) = break_2_flag60(_n4,b,e,d)
+break_7_flag47(0,_n4,b,e,d) = break_7_flag60(_n4,b,e,d)
+break_9_flag47(0,_n4,b,e,d) = break_9_flag60(_n4,b,e,d)
+break_6_flag47(0,_n4,b,e,d) = break_6_flag60(_n4,b,e,d)
+(((((1<=0) or (break_8_flag47(_N3(_n4,b,e,d),_n4,b,e,d)!=0)) or (break_7_flag47(_N3(_n4,b,e,d),_n4,b,e,d)!=0)) or (break_9_flag47(_N3(_n4,b,e,d),_n4,b,e,d)!=0)) or (break_6_flag47(_N3(_n4,b,e,d),_n4,b,e,d)!=0))
+(_n3<_N3(_n4,b,e,d)) -> (((((1>0) and (break_8_flag47(_n3,_n4,b,e,d)==0)) and (break_7_flag47(_n3,_n4,b,e,d)==0)) and (break_9_flag47(_n3,_n4,b,e,d)==0)) and (break_6_flag47(_n3,_n4,b,e,d)==0))
+a60((_n4+1),b,e,d) = a47(_N3(_n4,b,e,d),_n4,b,e,d)
+break_8_flag60((_n4+1),b,e,d) = break_8_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+c60((_n4+1),c,b,e,d) = c47(_N3(_n4,b,e,d),_n4,b,e,d)
+e60((_n4+1),e,b,d) = e47(_N3(_n4,b,e,d),_n4,b,e,d)
+d60((_n4+1),d,b,e) = d47(_N3(_n4,b,e,d),_n4,b,d,e)
+break_12_flag60((_n4+1),b,e,d) = ite((ite(((e47(_N3(_n4,b,e,d),_n4,b,e,d)<(d47(_N3(_n4,b,e,d),_n4,b,d,e)+1)) and (d47(_N3(_n4,b,e,d),_n4,b,d,e)<e47(_N3(_n4,b,e,d),_n4,b,e,d))),1,0)==0),ite((ite(((d47(_N3(_n4,b,e,d),_n4,b,d,e)<(b+1)) and (b<d47(_N3(_n4,b,e,d),_n4,b,d,e))),1,0)==0),ite(((c47(_N3(_n4,b,e,d),_n4,b,e,d)<(a47(_N3(_n4,b,e,d),_n4,b,e,d)+1)) and (a47(_N3(_n4,b,e,d),_n4,b,e,d)<c47(_N3(_n4,b,e,d),_n4,b,e,d))),1,0),0),0)
+break_10_flag60((_n4+1),b,e,d) = ite(((e47(_N3(_n4,b,e,d),_n4,b,e,d)<(d47(_N3(_n4,b,e,d),_n4,b,d,e)+1)) and (d47(_N3(_n4,b,e,d),_n4,b,d,e)<e47(_N3(_n4,b,e,d),_n4,b,e,d))),1,0)
+break_11_flag60((_n4+1),b,e,d) = ite((ite(((e47(_N3(_n4,b,e,d),_n4,b,e,d)<(d47(_N3(_n4,b,e,d),_n4,b,d,e)+1)) and (d47(_N3(_n4,b,e,d),_n4,b,d,e)<e47(_N3(_n4,b,e,d),_n4,b,e,d))),1,0)==0),ite(((d47(_N3(_n4,b,e,d),_n4,b,d,e)<(b+1)) and (b<d47(_N3(_n4,b,e,d),_n4,b,d,e))),1,0),0)
+break_4_flag60((_n4+1),b,e,d) = break_4_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+break_1_flag60((_n4+1),b,e,d) = break_1_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+break_3_flag60((_n4+1),b,e,d) = break_3_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+break_5_flag60((_n4+1),b,e,d) = break_5_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+break_2_flag60((_n4+1),b,e,d) = break_2_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+break_7_flag60((_n4+1),b,e,d) = break_7_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+break_9_flag60((_n4+1),b,e,d) = break_9_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+break_6_flag60((_n4+1),b,e,d) = break_6_flag47(_N3(_n4,b,e,d),_n4,b,e,d)
+a60(0,b,e,d) = 1
+break_8_flag60(0,b,e,d) = 0
+c60(0,c,b,e,d) = c
+e60(0,e,b,d) = e
+d60(0,d,b,e) = d
+break_12_flag60(0,b,e,d) = 0
+break_10_flag60(0,b,e,d) = 0
+break_11_flag60(0,b,e,d) = 0
+break_4_flag60(0,b,e,d) = 0
+break_1_flag60(0,b,e,d) = 0
+break_3_flag60(0,b,e,d) = 0
+break_5_flag60(0,b,e,d) = 0
+break_2_flag60(0,b,e,d) = 0
+break_7_flag60(0,b,e,d) = 0
+break_9_flag60(0,b,e,d) = 0
+break_6_flag60(0,b,e,d) = 0
+((((b<a60(_N4(b,e,d),b,e,d)) or (break_10_flag60(_N4(b,e,d),b,e,d)!=0)) or (break_11_flag60(_N4(b,e,d),b,e,d)!=0)) or (break_12_flag60(_N4(b,e,d),b,e,d)!=0))
+(_n4<_N4(b,e,d)) -> ((((b>=a60(_n4,b,e,d)) and (break_10_flag60(_n4,b,e,d)==0)) and (break_11_flag60(_n4,b,e,d)==0)) and (break_12_flag60(_n4,b,e,d)==0))
+
+
+
+
+
+
+
+===================================================================================================================================
+
+First Inter Loop
+
+
+break_2_flag10((_n1+1),_n2,_n3,_n4,b,e,d) = ite((ite((d10(_n1,_n2,_n3,_n4,b,e,d)>=e10(_n1,_n2,_n3,_n4,b,e,d)),0,ite((e10(_n1,_n2,_n3,_n4,b,e,d)>=(d10(_n1,_n2,_n3,_n4,b,e,d)+1)),1,0))==0),ite(((ite((d10(_n1,_n2,_n3,_n4,b,e,d)>=e10(_n1,_n2,_n3,_n4,b,e,d)),(e10(_n1,_n2,_n3,_n4,b,e,d)+1),e10(_n1,_n2,_n3,_n4,b,e,d))<(ite((d10(_n1,_n2,_n3,_n4,b,e,d)>=e10(_n1,_n2,_n3,_n4,b,e,d)),d10(_n1,_n2,_n3,_n4,b,e,d),ite((e10(_n1,_n2,_n3,_n4,b,e,d)>=(d10(_n1,_n2,_n3,_n4,b,e,d)+1)),(d10(_n1,_n2,_n3,_n4,b,e,d)+1),d10(_n1,_n2,_n3,_n4,b,e,d)))+1)) and (ite((d10(_n1,_n2,_n3,_n4,b,e,d)>=e10(_n1,_n2,_n3,_n4,b,e,d)),d10(_n1,_n2,_n3,_n4,b,e,d),ite((e10(_n1,_n2,_n3,_n4,b,e,d)>=(d10(_n1,_n2,_n3,_n4,b,e,d)+1)),(d10(_n1,_n2,_n3,_n4,b,e,d)+1),d10(_n1,_n2,_n3,_n4,b,e,d)))<ite((d10(_n1,_n2,_n3,_n4,b,e,d)>=e10(_n1,_n2,_n3,_n4,b,e,d)),(e10(_n1,_n2,_n3,_n4,b,e,d)+1),e10(_n1,_n2,_n3,_n4,b,e,d)))),1,0),0)
+
+e10((_n1+1),_n2,_n3,_n4,b,e,d) = ite((d10(_n1,_n2,_n3,_n4,b,e,d)>=e10(_n1,_n2,_n3,_n4,b,e,d)),(e10(_n1,_n2,_n3,_n4,b,e,d)+1),e10(_n1,_n2,_n3,_n4,b,e,d))
+
+d10((_n1+1),_n2,_n3,_n4,b,e,d) = ite((d10(_n1,_n2,_n3,_n4,b,e,d)>=e10(_n1,_n2,_n3,_n4,b,e,d)),d10(_n1,_n2,_n3,_n4,b,e,d),ite((e10(_n1,_n2,_n3,_n4,b,e,d)>=(d10(_n1,_n2,_n3,_n4,b,e,d)+1)),(d10(_n1,_n2,_n3,_n4,b,e,d)+1),d10(_n1,_n2,_n3,_n4,b,e,d)))
+
+break_1_flag10((_n1+1),_n2,_n3,_n4,b,e,d) = ite((d10(_n1,_n2,_n3,_n4,b,e,d)>=e10(_n1,_n2,_n3,_n4,b,e,d)),0,ite((e10(_n1,_n2,_n3,_n4,b,e,d)>=(d10(_n1,_n2,_n3,_n4,b,e,d)+1)),1,0))
+
+break_2_flag10(0,_n2,_n3,_n4,b,e,d) = break_2_flag26(_n2,_n3,_n4,b,e,d)
+e10(0,_n2,_n3,_n4,b,e,d) = 1
+d10(0,_n2,_n3,_n4,b,e,d) = d26(_n2,_n3,_n4,b,e,d)
+break_1_flag10(0,_n2,_n3,_n4,b,e,d) = break_1_flag26(_n2,_n3,_n4,b,e,d)
+(((1<=0) or (break_2_flag10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d)!=0)) or (break_1_flag10(_N1(_n2,_n3,_n4,b,e,d),_n2,_n3,_n4,b,e,d)!=0))
+(_n1<_N1(_n2,_n3,_n4,b,e,d)) -> (((1>0) and (break_2_flag10(_n1,_n2,_n3,_n4,b,e,d)==0)) and (break_1_flag10(_n1,_n2,_n3,_n4,b,e,d)==0))
+
+
+
+
+
+
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+break_2_flag10(_n1,_n2,_n3,_n4,b,e,d)==0
+
+break_1_flag10(_n1,_n2,_n3,_n4,b,e,d)==0
+
+
+Intial Values
+
+e10(0,_n2,_n3,_n4,b,e,d) = 1
+
+d10(0,_n2,_n3,_n4,b,e,d) = d26(_n2,_n3,_n4,b,e,d)
+
+
+Condition
+
+(d10(_n1,_n2,_n3,_n4,b,e,d)>=e10(_n1,_n2,_n3,_n4,b,e,d))
+
+(e10(_n1,_n2,_n3,_n4,b,e,d)>=(d10(_n1,_n2,_n3,_n4,b,e,d)+1))
+
+
+
+Case 
+
+
+(d10(0,_n2,_n3,_n4,b,e,d)>=e10(0,_n2,_n3,_n4,b,e,d)) ------>  (d10(0,_n2,_n3,_n4,b,e,d)>=1)
+
+e10((_n1+1),_n2,_n3,_n4,b,e,d) = (e10(_n1,_n2,_n3,_n4,b,e,d)+1)
+
+
+e10(_n1,_n2,_n3,_n4,b,e,d) = 1 + _n1
+
+d10((_n1+1),_n2,_n3,_n4,b,e,d)= d26(_n2,_n3,_n4,b,e,d)
+
+break_2_flag10((_n1+1),_n2,_n3,_n4,b,e,d) = 0
+
+break_1_flag10((_n1+1),_n2,_n3,_n4,b,e,d) = 0
+
+
+Next two possiblilies 
+
+
+Sub Case 1- 
+
+(e10(_n1,_n2,_n3,_n4,b,e,d)>=(d10(_n1,_n2,_n3,_n4,b,e,d)+1))
+

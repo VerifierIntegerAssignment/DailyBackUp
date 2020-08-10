@@ -1,0 +1,60 @@
+Program Body
+{
+  int n;
+  int i;
+  int j;
+  i = 0;
+  while (i < n)
+  {
+    j = i + 1;
+    while (j < n)
+    {
+      if (__VERIFIER_nondet_int() > 0)
+      {
+        j = j - 1;
+        n = n - 1;
+      }
+
+      j = j + 1;
+    }
+
+    i = i + 1;
+  }
+
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ i:int j:int n:int}
+
+Output in normal notation:
+1. Frame axioms:
+
+2. Output equations:
+i1 = (_N2+0)
+j1 = j7(_N2)
+n1 = n7(_N2)
+
+3. Other axioms:
+j4((_n1+1),_n2) = (ite((__VERIFIER_nondet_int2(_n1,_n2)>0),(j4(_n1,_n2)-1),j4(_n1,_n2))+1)
+n4((_n1+1),_n2) = ite((__VERIFIER_nondet_int2(_n1,_n2)>0),(n4(_n1,_n2)-1),n4(_n1,_n2))
+j4(0,_n2) = ((_n2+0)+1)
+n4(0,_n2) = n7(_n2)
+(0<=(j4(_N1(_n2),_n2)-n4(_N1(_n2),_n2)))
+(_n1<_N1(_n2)) -> (j4(_n1,_n2)<n4(_n1,_n2))
+j7((_n2+1)) = j4(_N1(_n2),_n2)
+n7((_n2+1)) = n4(_N1(_n2),_n2)
+j7(0) = j
+n7(0) = n
+(_N2>=(-(0)+n7(_N2)))
+(_n2<_N2) -> ((_n2+0)<n7(_n2))
+
+4. Assumption :
+
+5. Assertion :
+VIAP_STANDARD_OUTPUT_True

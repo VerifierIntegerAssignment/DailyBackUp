@@ -1,0 +1,67 @@
+pritom@pritom-VirtualBox:~/mainDev/viap_new$ ./viap_tool.py --spec=ReachSafety.prp Hola/6.c
+Program Body
+{
+  int _1_ASSUME;
+  _1_ASSUME = 0;
+  int _1_PROVE = 0;
+  int i;
+  int n;
+  int a;
+  int b;
+  n = __VERIFIER_nondet_int();
+  _1_ASSUME = n >= 0;
+  i = 0;
+  a = 0;
+  b = 0;
+  while (i < n)
+  {
+    if (__VERIFIER_nondet_int() > 0)
+    {
+      a = a + 1;
+      b = b + 2;
+    }
+    else
+    {
+      a = a + 2;
+      b = b + 1;
+    }
+
+    i = i + 1;
+  }
+
+  _1_PROVE = (a + b) == (3 * n);
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ a:int b:int i:int _1_PROVE:int n:int _1_ASSUME:int}
+
+Output in normal notation:
+1. Frame axioms:
+
+2. Output equations:
+a1 = a6(_N1)
+i1 = i6(_N1)
+b1 = b6(_N1)
+n1 = __VERIFIER_nondet_int2
+
+3. Other axioms:
+a6((_n1+1)) = ite((__VERIFIER_nondet_int3(_n1)>0),(a6(_n1)+1),(a6(_n1)+2))
+i6((_n1+1)) = (i6(_n1)+1)
+b6((_n1+1)) = ite((__VERIFIER_nondet_int3(_n1)>0),(b6(_n1)+2),(b6(_n1)+1))
+a6(0) = 0
+i6(0) = 0
+b6(0) = 0
+(0<=(-(__VERIFIER_nondet_int2)+i6(_N1)))
+(_n1<_N1) -> (i6(_n1)<__VERIFIER_nondet_int2)
+
+4. Assumption :
+(__VERIFIER_nondet_int2>=0)
+
+5. Assertion :
+((a6(_N1)+b6(_N1))==(3*__VERIFIER_nondet_int2))

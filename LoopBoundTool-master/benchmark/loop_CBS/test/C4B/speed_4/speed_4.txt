@@ -1,0 +1,44 @@
+Program Body
+{
+  int n;
+  int m;
+  int dir;
+  int i;
+  i = m;
+  while ((0 < i) && (i < n))
+  {
+    if (dir == 1)
+      i = i + 1;
+
+  }
+
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ i:int m:int dir:int n:int}
+
+Output in normal notation:
+1. Frame axioms:
+m1 = m
+dir1 = dir
+n1 = n
+
+2. Output equations:
+i1 = i2(_N1)
+
+3. Other axioms:
+i2((_n1+1)) = ite((dir==1),(i2(_n1)+1),i2(_n1))
+i2(0) = m
+((0>=i2(_N1)) or (i2(_N1)>=n))
+(_n1<_N1) -> ((0<i2(_n1)) and (i2(_n1)<n))
+
+4. Assumption :
+
+5. Assertion :
+VIAP_STANDARD_OUTPUT_True

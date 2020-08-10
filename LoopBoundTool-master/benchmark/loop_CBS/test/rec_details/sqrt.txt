@@ -1,0 +1,50 @@
+pritom@pritom-VirtualBox:~/mainDev/viap_new$ ./viap_tool.py --spec=ReachSafety.prp rec_eq/sqrt.c
+Program Body
+{
+  int X;
+  int a;
+  int su;
+  int t;
+  a = 0;
+  su = 1;
+  t = 1;
+  while (su <= X)
+  {
+    a = a + 1;
+    t = t + 2;
+    su = su + t;
+  }
+
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ a:int X:int t:int su:int}
+
+Output in normal notation:
+1. Frame axioms:
+X1 = X
+
+2. Output equations:
+a1 = a3(_N1)
+t1 = t3(_N1)
+su1 = su3(_N1)
+
+3. Other axioms:
+a3((_n1+1)) = (a3(_n1)+1)
+t3((_n1+1)) = (t3(_n1)+2)
+su3((_n1+1)) = (su3(_n1)+(t3(_n1)+2))
+a3(0) = 0
+t3(0) = 1
+su3(0) = 1
+(su3(_N1)>X)
+(_n1<_N1) -> (su3(_n1)<=X)
+
+4. Assumption :
+
+5. Assertion :

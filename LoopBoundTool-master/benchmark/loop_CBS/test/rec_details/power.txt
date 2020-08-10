@@ -1,0 +1,46 @@
+pritom@pritom-VirtualBox:~/mainDev/viap_new$ ./viap_tool.py --spec=ReachSafety.prp rec_eq/power.c
+Program Body
+{
+  int a;
+  int b;
+  int J_var;
+  int P;
+  J_var = 0;
+  P = 1;
+  while (J_var < b)
+  {
+    P = P * a;
+    J_var = J_var + 1;
+  }
+
+}
+
+Function Name:
+power
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ a:int P:int b:int J_var:int}
+
+Output in normal notation:
+1. Frame axioms:
+a1 = a
+b1 = b
+
+2. Output equations:
+P1 = P2(_N1)
+J_var1 = J_var2(_N1)
+
+3. Other axioms:
+P2((_n1+1)) = (P2(_n1)*a)
+J_var2((_n1+1)) = (J_var2(_n1)+1)
+P2(0) = 1
+J_var2(0) = 0
+(0<=(-(b)+J_var2(_N1)))
+(_n1<_N1) -> (J_var2(_n1)<b)
+
+4. Assumption :
+
+5. Assertion :

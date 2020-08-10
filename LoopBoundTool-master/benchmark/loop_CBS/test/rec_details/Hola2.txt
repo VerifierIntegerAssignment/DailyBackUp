@@ -1,0 +1,65 @@
+pritom@pritom-VirtualBox:~/mainDev/viap_new$ ./viap_tool.py --spec=ReachSafety.prp Hola/1.c
+Program Body
+{
+  int _1_PROVE = 0;
+  int i;
+  i = 1;
+  int j;
+  j = 0;
+  int z;
+  z = i - j;
+  int x;
+  x = 0;
+  int y;
+  y = 0;
+  int w;
+  w = 0;
+  while (__VERIFIER_nondet_int() > 0)
+  {
+    z = z + ((x + y) + w);
+    y = y + 1;
+    if ((z % 2) == 1)
+      x = x + 1;
+
+    w = w + 2;
+  }
+
+  _1_PROVE = x == y;
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ j:int i:int _1_PROVE:int w:int y:int x:int z:int}
+
+Output in normal notation:
+1. Frame axioms:
+
+2. Output equations:
+i1 = 1
+j1 = 0
+w1 = w5(_N1)
+y1 = y5(_N1)
+x1 = x5(_N1)
+z1 = z5(_N1)
+
+3. Other axioms:
+y5((_n1+1)) = (y5(_n1)+1)
+x5((_n1+1)) = ite((((z5(_n1)+((x5(_n1)+y5(_n1))+w5(_n1)))%2)==1),(x5(_n1)+1),x5(_n1))
+z5((_n1+1)) = (z5(_n1)+((x5(_n1)+y5(_n1))+w5(_n1)))
+w5((_n1+1)) = (w5(_n1)+2)
+y5(0) = 0
+x5(0) = 0
+z5(0) = (1-0)
+w5(0) = 0
+(0<=-(__VERIFIER_nondet_int2(_N1)))
+(_n1<_N1) -> (__VERIFIER_nondet_int2(_n1)>0)
+
+4. Assumption :
+
+5. Assertion :
+(x5(_N1)==y5(_N1))

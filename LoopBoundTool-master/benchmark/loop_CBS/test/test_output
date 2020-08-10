@@ -1,0 +1,124 @@
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+
+void __VERIFIER_assert(int cond) {
+  if (!(cond)) {
+    ERROR: __VERIFIER_error();
+  }
+  return;
+}
+int __VERIFIER_nondet_int();
+
+int main() {
+  int n;
+  int m;
+  int p[m];
+  int t[n];
+  int i;
+  int j;
+    
+  for (i = 0; i <= n - m; i++) { 
+        
+       for (j = 0; j < m; j++) 
+           if (t[i + j] != p[j]) 
+                break; 
+  
+       if (j == m) return i;
+
+    }   
+}
+
+
+
+
+Program Body
+{
+  int break_2_flag;
+  break_2_flag = 0;
+  int break_1_flag;
+  break_1_flag = 0;
+  int n;
+  int m;
+  int p[m];
+  int t[n];
+  int i;
+  int j;
+  i = 0;
+  while ((i <= (n - m)) && (break_2_flag == 0))
+  {
+    break_2_flag = 0;
+    j = 0;
+    while ((j < m) && (break_1_flag == 0))
+    {
+      break_1_flag = 0;
+      if (t[i + j] != p[j])
+      {
+        break_1_flag = 1;
+      }
+
+      if (break_1_flag == 0)
+      {
+        j = j + 1;
+      }
+
+    }
+
+    if (j == m)
+    {
+      RET = i;
+    }
+
+    if (j != m)
+    {
+      i = i + 1;
+    }
+
+    if (j == m)
+    {
+      break_2_flag = 1;
+    }
+
+  }
+
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ i:int j:int m:int n:int p:array t:array break_1_flag:int break_2_flag:int}
+
+Output in normal notation:
+1. Frame axioms:
+p1 = p
+d1array1(_x1,_x2) = d1array(_x1,_x2)
+m1 = m
+t1 = t
+n1 = n
+
+2. Output equations:
+i1 = i14(_N2)
+j1 = j14(_N2)
+break_2_flag1 = break_2_flag14(_N2)
+break_1_flag1 = break_1_flag14(_N2)
+
+3. Other axioms:
+j5((_n1+1),_n2) = ite((ite((d1array(t,(i14(_n2)+j5(_n1,_n2)))!=d1array(p,j5(_n1,_n2))),1,0)==0),(j5(_n1,_n2)+1),j5(_n1,_n2))
+break_1_flag5((_n1+1),_n2) = ite((d1array(t,(i14(_n2)+j5(_n1,_n2)))!=d1array(p,j5(_n1,_n2))),1,0)
+j5(0,_n2) = 0
+break_1_flag5(0,_n2) = break_1_flag14(_n2)
+((j5(_N1(_n2),_n2)>=m) or (break_1_flag5(_N1(_n2),_n2)!=0))
+(_n1<_N1(_n2)) -> ((j5(_n1,_n2)<m) and (break_1_flag5(_n1,_n2)==0))
+i14((_n2+1)) = ite((j5(_N1(_n2),_n2)!=m),(i14(_n2)+1),i14(_n2))
+j14((_n2+1)) = j5(_N1(_n2),_n2)
+break_2_flag14((_n2+1)) = ite((j5(_N1(_n2),_n2)==m),1,0)
+break_1_flag14((_n2+1)) = break_1_flag5(_N1(_n2),_n2)
+i14(0) = 0
+j14(0) = j
+break_2_flag14(0) = 0
+break_1_flag14(0) = 0
+((i14(_N2)>(n-m)) or (break_2_flag14(_N2)!=0))
+(_n2<_N2) -> ((i14(_n2)<=(n-m)) and (break_2_flag14(_n2)==0))
+

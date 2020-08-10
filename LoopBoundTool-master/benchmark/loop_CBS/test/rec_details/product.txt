@@ -1,0 +1,46 @@
+pritom@pritom-VirtualBox:~/mainDev/viap_new$ ./viap_tool.py --spec=ReachSafety.prp rec_eq/product.c
+Program Body
+{
+  int a;
+  int b;
+  int J_var;
+  int A;
+  J_var = 0;
+  A = 0;
+  while (J_var < b)
+  {
+    A = A + a;
+    J_var = J_var + 1;
+  }
+
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ a:int A:int b:int J_var:int}
+
+Output in normal notation:
+1. Frame axioms:
+a1 = a
+b1 = b
+
+2. Output equations:
+A1 = A2(_N1)
+J_var1 = J_var2(_N1)
+
+3. Other axioms:
+A2((_n1+1)) = (A2(_n1)+a)
+J_var2((_n1+1)) = (J_var2(_n1)+1)
+A2(0) = 0
+J_var2(0) = 0
+(0<=(-(b)+J_var2(_N1)))
+(_n1<_N1) -> (J_var2(_n1)<b)
+
+4. Assumption :
+
+5. Assertion :

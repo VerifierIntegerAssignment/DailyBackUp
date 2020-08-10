@@ -1,0 +1,99 @@
+Program Body
+{
+  int _1DUMMY;
+  _1DUMMY = 0;
+  y = copy(x, y);
+  _1DUMMY = count_down(y);
+}
+
+Function Name:
+start
+Return Type:
+void
+Input Variables:
+{ y:int x:int}
+Local Variables:
+{ _1DUMMY:int}
+Program Body
+{
+  int RET;
+  RET = 0;
+  if (x > 0)
+  {
+    y = y + 1;
+    x = x - 1;
+    y = copy(x, y);
+  }
+
+  RET = y;
+}
+
+Function Name:
+copy
+Return Type:
+int
+Input Variables:
+{ y:int x:int}
+Local Variables:
+{ RET:int}
+Program Body
+{
+  int _1DUMMY;
+  _1DUMMY = 0;
+  if (x > 0)
+  {
+    x = x - 1;
+    _1DUMMY = count_down(x);
+  }
+
+}
+
+Function Name:
+count_down
+Return Type:
+void
+Input Variables:
+{ x:int}
+Local Variables:
+{ _1DUMMY:int}
+
+Output in normal notation:
+1. Frame axioms:
+x1(x) = x
+
+2. Output equations:
+y1(x,y) = copy(x,y)
+_1DUMMY1(x,y) = count_down(copy(x,y))
+
+3. Other axioms:
+
+4. Assumption :
+
+5. Assertion :
+
+Output in normal notation:
+1. Frame axioms:
+
+2. Output equations:
+y1(x,y) = ite((x>0),copy((x-1),(y+1)),y)
+x1(x) = ite((x>0),(x-1),x)
+copy(x,y) = ite((x>0),copy((x-1),(y+1)),y)
+
+3. Other axioms:
+
+4. Assumption :
+
+5. Assertion :
+
+Output in normal notation:
+1. Frame axioms:
+
+2. Output equations:
+x1(x) = ite((x>0),(x-1),x)
+_1DUMMY1(x) = ite((x>0),count_down((x-1)),0)
+
+3. Other axioms:
+
+4. Assumption :
+
+5. Assertion :

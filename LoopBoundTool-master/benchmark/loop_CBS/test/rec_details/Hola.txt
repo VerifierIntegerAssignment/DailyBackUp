@@ -1,0 +1,50 @@
+pritom@pritom-VirtualBox:~/mainDev/viap_new$ ./viap_tool.py --spec=ReachSafety.prp Hola/0.c
+Program Body
+{
+  int _1_PROVE = 0;
+  int x;
+  x = 1;
+  int y;
+  y = 1;
+  while (__VERIFIER_nondet_int() > 0)
+  {
+    int t1_var;
+    t1_var = x;
+    int t2_var;
+    t2_var = y;
+    x = t1_var + t2_var;
+    y = t1_var + t2_var;
+  }
+
+  _1_PROVE = y >= 1;
+}
+
+Function Name:
+main
+Return Type:
+int
+Input Variables:
+{}
+Local Variables:
+{ y:int x:int t2_var:int _1_PROVE:int t1_var:int}
+
+Output in normal notation:
+1. Frame axioms:
+
+2. Output equations:
+y1 = y4(_N1)
+x1 = x4(_N1)
+t2_var1 = t2_var4(_N1)
+t1_var1 = t1_var4(_N1)
+
+3. Other axioms:
+y4((_n1+1)) = (x4(_n1)+y4(_n1))
+x4((_n1+1)) = (x4(_n1)+y4(_n1))
+t2_var4((_n1+1)) = y4(_n1)
+t1_var4((_n1+1)) = x4(_n1)
+y4(0) = 1
+x4(0) = 1
+t2_var4(0) = t2_var
+t1_var4(0) = t1_var
+(0<=-(__VERIFIER_nondet_int2(_N1)))
+(_n1<_N1) -> (__VERIFIER_nondet_int2(_n1)>0)
